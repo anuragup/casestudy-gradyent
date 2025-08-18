@@ -8,7 +8,7 @@ Here are the components I used :
 - Configured one managed node group: main (using spot instances with capacity_type = "SPOT").
 - Set up security with an aws_security_group in modules/vpc/main.tf for restricting inbound traffic (ports 80/443, 10250, 22) and allowing all outbound.
 
-Here is the diagram created for refrence: 
+Here is the diagram I have tried to create for refrence: 
 
 <img width="13076" height="16240" alt="image" src="https://github.com/user-attachments/assets/03cf194e-bb90-4a83-94b1-628fb846fe2c" />
 
@@ -23,6 +23,7 @@ Here is the diagram created for refrence:
 
 - **Ease of Use**: Terraform modules (`vpc`, `eks`) simplify infrastructure setup, while Helm charts (`tech-interview-app`) streamline application deployment. Clear `README.md` instructions and configurable `values.yaml` enhance accessibility.
 
+## Alternative Setup
 
 This alternative setup uses a VPC across three AZs with private subnets for EKS nodes (e.g., ["10.0.4.0/24", "10.0.5.0/24", "10.0.6.0/24"]) and NAT Gateways for safe outbound traffic. It includes EKS with a private endpoint, two node groups—system on on-demand instances for stability and apps on spot instances for savings—plus the AWS Load Balancer Controller for ingress. This balances security and cost 
 
