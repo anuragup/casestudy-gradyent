@@ -8,7 +8,10 @@ Here are the components I used :
 - Configured one managed node group: main (using spot instances with capacity_type = "SPOT").
 - Set up security with an aws_security_group in modules/vpc/main.tf for restricting inbound traffic (ports 80/443, 10250, 22) and allowing all outbound.
 
-Here is the diagram created for refrence:
+Here is the diagram created for refrence: 
+
+<img width="13076" height="16240" alt="image" src="https://github.com/user-attachments/assets/03cf194e-bb90-4a83-94b1-628fb846fe2c" />
+
 
 ## Addressing Solution Requirements
 
