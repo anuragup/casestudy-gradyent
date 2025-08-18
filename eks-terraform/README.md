@@ -10,7 +10,6 @@ Here are the components I used :
 
 Here is the diagram I have tried to create for refrence: 
 
-<img width="13076" height="16240" alt="image" src="https://github.com/user-attachments/assets/03cf194e-bb90-4a83-94b1-628fb846fe2c" />
 
 
 ## Addressing Solution Requirements
