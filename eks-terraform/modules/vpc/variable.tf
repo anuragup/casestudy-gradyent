@@ -1,16 +1,24 @@
 variable "vpc_cidr" {
-  type = string
+  type        = string
+  description = "VPC CIDR"
 }
-variable "private_subnet_cidrs" {
-  type = list(string)
-}
+
 variable "public_subnet_cidrs" {
-  type = list(string)
+  type        = list(string)
+  description = "Public subnet CIDRs"
 }
+
+variable "private_subnet_cidrs" {
+  type        = list(string)
+  description = "Private subnet CIDRs"
+}
+
 variable "azs" {
-  type = list(string)
+  type        = list(string)
+  description = "Availability zones"
 }
+
 variable "env" {
-  type = string
+  type        = string
+  description = "Environment tag/name"
 }
-#track changes in eks-terraform/modules/vpc/variable.tf
